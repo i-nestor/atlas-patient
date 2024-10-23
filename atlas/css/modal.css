@@ -1,0 +1,234 @@
+
+.overlay {
+  position: fixed;
+  display: none;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100,150,100, 0.25);
+  z-index: 10;
+}
+
+.modal-overlay {
+  position: relative;
+  display: block;
+  margin: 4% auto;
+  padding: 0;
+  width: 525px;
+  height: auto;
+  text-align: center;
+  color: #111;
+  background: white;
+  font-size: 16px;
+  border: 1px solid #7cb47a;
+  box-shadow: 0 4px 8px 4px rgba(237, 237, 237, 0.75);
+  z-index: 11;
+}
+
+.modal-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 24px 16px 24px;
+  /*margin-top: 0;*/
+  color: white;
+  background: var(--green);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  z-index: 11;
+}
+
+.modal-header a.close-button {
+  position: relative;
+  display: flex;
+  /*float: right;*/
+  /*right: 0;*/
+  margin: 0;
+  padding: 6px 11px;
+  color: #e53d3d;
+  background: white;
+  font-size: 16px;
+  /*font-weight: bold;*/
+  border-radius: 64px;
+}
+
+.modal-header a.close-button:hover,
+.modal-header a.close-button:focus {
+  color: white;
+  background: #e53d3d;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Модальное содержание/коробка */
+/*.modal-content {*/
+/*  display: block;*/
+/*  background-color: #e53d3d;*/
+/*  margin: 10% auto; !* 10% сверху и по центру *!*/
+/*  !*padding: 20px;*!*/
+/*  !*border: 1px solid #888;*!*/
+/*  width: 90%; !* Может быть больше или меньше, в зависимости от размера экрана *!*/
+/*  !*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*!*/
+/*}*/
+
+/*input {*/
+/*  margin-right: 0;*/
+/*  !*margin-bottom: 0;*!*/
+/*  !*max-width: 80%;*!*/
+/*}*/
+
+/*button {*/
+/*  padding: 8px 14px;*/
+/*  font-size: 15px;*/
+/*  cursor: pointer;*/
+/*  border: none;*/
+/*}*/
+
+
+
+/* Форма и поля */
+/*.form-group {*/
+/*  !*display: block;*!*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  !*align-content: stretch;*!*/
+/*  width: 420px;*/
+/*  min-width: 420px;*/
+/*  !*text-align: center;*!*/
+/*  !*align-items: center;*!*/
+/*  !*justify-content: space-between;*!*/
+/*  margin-bottom: 15px;*/
+/*  padding: 0;*/
+
+/*  background-color: goldenrod;*/
+/*}*/
+
+/*.form-group label {*/
+/*  display: inline-block;*/
+/*  width: 420px;*/
+/*  min-width: 420px;*/
+/*  margin-bottom: 5px;*/
+/*}*/
+
+/*.form-group input {*/
+/*  display: inline-block;*/
+/*  width: 420px;*/
+/*  min-width: 420px;                !** --------------------- **!*/
+/*  padding: 10px;*/
+/*  margin-left: 0;*/
+/*  !*margin-bottom: 10px;*!*/
+/*  border: 1px solid #ccc;*/
+/*}*/
+
+/*.form-group .input-group {*/
+/*  display: flex;*/
+/*  align-items: flex-start;*/
+/*  flex-wrap: nowrap;*/
+/*  !*width: 80%;*!*/
+/*  margin: 0;*/
+/*  !*width: 300px;*!*/
+/*  min-width: 300px;*/
+
+/*  !*align-items: flex-start;*!*/
+/*  !*flex-wrap: nowrap;*!*/
+/*  !*display: flex;*!*/
+/*  !*flex-direction: row;*!*/
+/*  !*align-content: unsafe center;*!*/
+/*  !*justify-content: space-between;*!*/
+/*  background-color: gold;*/
+/*}*/
+
+/*.form-group .input-group input {*/
+/*  display: block;*/
+/*  margin: 0;*/
+/*  max-width: 200px;*/
+/*}*/
+
+/*.show-password {*/
+/*  !*display: inline-block;*!*/
+/*  margin: 0;*/
+/*  border: none;*/
+/*  width: 40px;*/
+/*  background-color: #f0f0f0;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*button.show-password {*/
+/*  display: flex;*/
+/*  margin: 0;*/
+/*  padding: 9px 12px;*/
+/*  font-size: 14px;*/
+/*}*/
+
+.modal-content {
+  /*width: 300px; !* Ширина формы *!*/
+  /*background-color: #fff;*/
+  display: flex;
+  padding: 24px;
+  /*background-color: #e53d3d;*/
+}
+
+.modal-content button {
+  padding: 16px 24px;
+  border: none;
+  color: white;
+  background: #7cb47a;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #649664;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  /*align-items: center;*/
+
+  /*justify-content: space-between;*/
+
+  width: 100%; /* Поля ввода занимают всю ширину */
+  padding: 8px;
+  margin-bottom: 10px; /* Отступ между полями */
+  /*border: 1px solid #ccc;*/
+
+  /*background-color: coral;*/
+}
+
+.form-group label {
+  padding-bottom: 10px;
+}
+
+
+.form-group input {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.input-group {
+  display: flex; /* Используем flexbox для кнопки и поля пароля */
+  flex-wrap: nowrap;
+  width: 100%; /* Поля ввода занимают всю ширину */
+}
+
+.input-group input {
+  flex-grow: 4;
+  font-size: 16px;
+}
+
+.input-group .show-password {
+  padding: 12px 16px; /* Отступы для кнопки */
+  border: none;
+  background-color: var(--green); /* Цвет кнопки */
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  flex-grow: 1; /* Кнопка занимает оставшееся пространство */
+}
+
